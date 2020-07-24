@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gallery</title>
+</head>
+<body>
+
+    <div class="modal">
+        <div class="modal-overlay" data-overlay="overlay">
+            <div class="modal-content" data-content="content">
+                <div class="close-button" data-button="close-button"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <header class="header">
+            <h1 class="header-title">Grid Gallery</h1>
+            
+            <label class="upload-button" for="upload-btn">Upload</label>
+            <input id="upload-btn" type="file" multiple>
+
+            <button class="clear-button">Clear all</button>
+        </header>
+        <main class="main">
+            <div class="grid-gallery">
+                <div class="grid-box">
+                    <img src="images/11.jpg" alt="" data-img="img">
+                </div>
+                <div class="grid-box">
+                    <img src="images/22.jpg" alt="" data-img="img">
+                </div>
+                <div class="grid-box">
+                    <img src="images/33.jpg" alt="" data-img="img">
+                </div>
+                <div class="grid-box">
+                    <img src="images/44.jpg" alt="" data-img="img">
+                </div>
+                <div class="grid-box">
+                    <img src="images/55.png" alt="" data-img="img">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="modal.js"></script>
+    <script src="upload.js"></script>
+</body>
+</html>
